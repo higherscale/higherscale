@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+* {
+    margin: 0px;
+    padding: 0x;
+    box-sizing: border-box;
+
+}     
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(21, 197, 197);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.classOne {
+    color: rgb(53, 53, 53);
+    letter-spacing: 3px;
+    font-size: 19px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+}
+.links a {
+    color: rgb(53, 53, 53);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.links li {
+    list-style: none;
+}
+.ForMobile div{
+    width: 24px;
+    height: 3px;
+    background-color: rgb(20, 20, 20);
+    margin: 5px;
+}
+@media screen and (max-width:1024px) {
+    .links {
+        width: 60%;
+    }
+}
+@media screen and (max-width:768px){
+  .links {
+      position: absolute;
+      right: 0px;
+      height: 92vh;
+      top: 8vh;
+      background-color: rgb(27, 165, 165);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="classOne">
+            <h4>Type  In  The  Title</h4>
+        </div>
+        <ul class="links">
+            <li><a href="#">Nav1</a></li>
+            <li><a href="#">Nav2</a></li>
+            <li><a href="#">Nav3</a></li>
+            <li><a href="#">Nav4</a></li>
+        </ul>
+        <div class="ForMobile">
+            <div class="One"></div>
+            <div class="Two"></div>
+            <div class="Three"></div>
+        </div>
+    </nav>
+</body>
+</html>
